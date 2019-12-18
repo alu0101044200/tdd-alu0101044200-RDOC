@@ -168,7 +168,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo cantidad de lplato que son los gramos que se insertan de cada alimento</p>
         
         </div>
       </div>
@@ -181,7 +181,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo lista del plato de la clase lista</p>
         
         </div>
       </div>
@@ -194,7 +194,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo nombre del plato</p>
         
         </div>
       </div>
@@ -228,7 +228,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 7</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 12</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> (<span class="ruby-identifier">nombre</span>)
 
     <span class="ruby-ivar">@nombre</span> = <span class="ruby-identifier">nombre</span>
@@ -272,7 +272,7 @@
 
           
           <div class="method-source-code" id="3C-3D-3E-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 21</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 26</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">&lt;=&gt;</span> (<span class="ruby-identifier">other</span>)
 
     <span class="ruby-keyword">self</span>.<span class="ruby-identifier">huella_nutricional</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">huella_nutricional</span>
@@ -307,7 +307,7 @@
 
           
           <div class="method-source-code" id="add-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 69</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 74</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add</span> (<span class="ruby-identifier">lista_alimentos</span>)
     <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
     <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">lista_alimentos</span>.<span class="ruby-identifier">size</span> <span class="ruby-keyword">do</span>
@@ -351,7 +351,7 @@
 
           
           <div class="method-source-code" id="add_alimento-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 44</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 49</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_alimento</span> (<span class="ruby-identifier">alimento</span>, <span class="ruby-identifier">cantidad</span>)
     <span class="ruby-ivar">@cantidad</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">cantidad</span>)
 
@@ -402,7 +402,7 @@
 
           
           <div class="method-source-code" id="cantidad_total-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 85</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 90</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">cantidad_total</span>
     <span class="ruby-ivar">@cantidad</span>.<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:to_i</span>).<span class="ruby-identifier">reduce</span>(<span class="ruby-value">0</span>, <span class="ruby-value">:+</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -435,7 +435,7 @@
 
           
           <div class="method-source-code" id="each-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 29</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 34</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">each</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -476,7 +476,7 @@
 
           
           <div class="method-source-code" id="get_gas-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 134</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 139</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_gas</span>
     <span class="ruby-keyword">return</span> <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_gei</span>
 <span class="ruby-keyword">end</span></pre>
@@ -516,7 +516,7 @@
 
           
           <div class="method-source-code" id="huella_nutricional-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 142</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 147</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">huella_nutricional</span>()
     <span class="ruby-identifier">energia</span> = <span class="ruby-identifier">valor_calorico_total</span>
     <span class="ruby-identifier">gas</span> = <span class="ruby-identifier">get_gas</span>
@@ -569,7 +569,7 @@
 
           
           <div class="method-source-code" id="lista-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 80</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 85</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">lista</span>
     <span class="ruby-ivar">@list</span>
 <span class="ruby-keyword">end</span></pre>
@@ -602,7 +602,7 @@
 
           
           <div class="method-source-code" id="porcentaje_carbohidratos-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 99</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 104</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">porcentaje_carbohidratos</span>
     (<span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_carbohidrato</span> <span class="ruby-operator">*</span> <span class="ruby-value">100</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">cantidad_total</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -635,7 +635,7 @@
 
           
           <div class="method-source-code" id="porcentaje_lipidos-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 95</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 100</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">porcentaje_lipidos</span>
     (<span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_lipido</span> <span class="ruby-operator">*</span> <span class="ruby-value">100</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">cantidad_total</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -668,7 +668,7 @@
 
           
           <div class="method-source-code" id="porcentaje_proteina-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 90</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 95</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">porcentaje_proteina</span>
     (<span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_proteina</span> <span class="ruby-operator">*</span> <span class="ruby-value">100</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">cantidad_total</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -701,7 +701,7 @@
 
           
           <div class="method-source-code" id="to_s-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 15</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">to_s</span>
     <span class="ruby-node">&quot;#{nombre}&quot;</span>
 <span class="ruby-keyword">end</span></pre>
@@ -734,7 +734,7 @@
 
           
           <div class="method-source-code" id="valor_calorico_total-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 104</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 109</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">valor_calorico_total</span>
     <span class="ruby-identifier">a</span> = <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_proteina</span>
     <span class="ruby-identifier">b</span> = <span class="ruby-ivar">@list</span>.<span class="ruby-identifier">get_carbohidrato</span>
@@ -770,7 +770,7 @@
 
           
           <div class="method-source-code" id="write-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 112</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/plato.rb, line 117</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">write</span>
     <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
     <span class="ruby-identifier">ingedientes</span> = <span class="ruby-string">&quot;&quot;</span>

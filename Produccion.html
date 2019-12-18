@@ -146,7 +146,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo de gas del plato</p>
         
         </div>
       </div>
@@ -159,7 +159,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo de terreno del plato</p>
         
         </div>
       </div>
@@ -198,7 +198,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 8</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 10</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">nombre</span>)
     <span class="ruby-keyword">super</span>(<span class="ruby-identifier">nombre</span>)
     <span class="ruby-ivar">@list</span> = <span class="ruby-constant">Lista</span>.<span class="ruby-identifier">new</span>()
@@ -240,7 +240,7 @@
 
           
           <div class="method-source-code" id="3C-3D-3E-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 16</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 18</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">&lt;=&gt;</span> (<span class="ruby-identifier">other</span>)
  
     <span class="ruby-keyword">self</span>.<span class="ruby-identifier">eficiencia</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">eficiencia</span>
@@ -275,7 +275,7 @@
 
           
           <div class="method-source-code" id="eficiencia-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 58</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 60</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">eficiencia</span>
     <span class="ruby-ivar">@eficiencia</span> = <span class="ruby-identifier">get_gases</span>
     <span class="ruby-ivar">@eficiencia</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">get_terreno</span>
@@ -310,7 +310,7 @@
 
           
           <div class="method-source-code" id="get_gases-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 28</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 30</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_gases</span> 
     <span class="ruby-identifier">aux</span> = <span class="ruby-identifier">list</span>.<span class="ruby-identifier">get_head</span>
     <span class="ruby-ivar">@gas</span> = <span class="ruby-value">0</span>
@@ -353,7 +353,7 @@
 
           
           <div class="method-source-code" id="get_terreno-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 43</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 45</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_terreno</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-identifier">list</span>.<span class="ruby-identifier">get_head</span>
     <span class="ruby-ivar">@terreno</span> = <span class="ruby-value">0</span>
@@ -396,7 +396,7 @@
 
           
           <div class="method-source-code" id="to_s-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 23</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/produccion.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">to_s</span>
     <span class="ruby-node">&quot;#{nombre} Gas = #{get_gases()} Terreno = #{get_terreno()}&quot;</span>
 <span class="ruby-keyword">end</span></pre>

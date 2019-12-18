@@ -137,7 +137,7 @@
 
         <div class="method-description">
         
-        
+        <p>genero de la persona de la que se trata de su dieta</p>
         
         </div>
       </div>
@@ -150,7 +150,7 @@
 
         <div class="method-description">
         
-        
+        <p>nombre del alimento</p>
         
         </div>
       </div>
@@ -163,7 +163,7 @@
 
         <div class="method-description">
         
-        
+        <p>el total de la suma de la energia diaria de todos los alimentos que ha consumido dicha persona</p>
         
         </div>
       </div>
@@ -204,7 +204,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 14</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 21</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">genero</span>)
     <span class="ruby-ivar">@energia_diaria</span> = []
     <span class="ruby-ivar">@genero</span> = <span class="ruby-identifier">genero</span>
@@ -248,7 +248,7 @@
 
           
           <div class="method-source-code" id="formated-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 35</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 42</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">formated</span>
     <span class="ruby-ivar">@total</span> = <span class="ruby-identifier">suma</span>
     <span class="ruby-ivar">@total</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span>
@@ -285,7 +285,7 @@
 
           
           <div class="method-source-code" id="impacto_gases-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 74</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 81</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">impacto_gases</span>
     <span class="ruby-ivar">@datos_finales</span>[<span class="ruby-value">2</span>]
 <span class="ruby-keyword">end</span></pre>
@@ -318,7 +318,7 @@
 
           
           <div class="method-source-code" id="impacto_terreno-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 79</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 86</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">impacto_terreno</span>
     <span class="ruby-ivar">@datos_finales</span>[<span class="ruby-value">3</span>]
 <span class="ruby-keyword">end</span></pre>
@@ -351,7 +351,7 @@
 
           
           <div class="method-source-code" id="insert_in-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 22</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 29</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">insert_in</span> (<span class="ruby-identifier">comida</span>)
     <span class="ruby-ivar">@energia_diaria</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">comida</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -396,7 +396,7 @@
 
           
           <div class="method-source-code" id="requerimiento-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 49</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 56</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">requerimiento</span>
    
     <span class="ruby-keyword">if</span> <span class="ruby-ivar">@genero</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> 
@@ -449,7 +449,7 @@
 
           
           <div class="method-source-code" id="suma-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 28</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/alimento_diario.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">suma</span>
     <span class="ruby-ivar">@energia_diaria</span>.<span class="ruby-identifier">transpose</span>.<span class="ruby-identifier">map</span> {
         <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">inject</span> (<span class="ruby-value">:+</span>)  

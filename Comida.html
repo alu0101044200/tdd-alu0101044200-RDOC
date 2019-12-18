@@ -53,6 +53,15 @@
   </div>
 
   
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-Comida-label-Clase+Comida">Clase Comida</a>
+    <li><a href="#class-Comida-label-Esta+clase+representa+un+alimento">Esta clase representa un alimento</a>
+  </ul>
+</div>
+
 
   <div id="class-metadata">
     
@@ -114,6 +123,25 @@
 
   <section class="description">
     
+<h1 id="class-Comida-label-Clase+Comida">Clase <a href="Comida.html"><code>Comida</code></a><span><a href="#class-Comida-label-Clase+Comida">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<h2 id="class-Comida-label-Esta+clase+representa+un+alimento">Esta clase representa un alimento<span><a href="#class-Comida-label-Esta+clase+representa+un+alimento">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Cada alimeto tiene</p>
+<ul><li>
+<p>Nombre</p>
+</li><li>
+<p>Valor de proteinas</p>
+</li><li>
+<p>Valor de cargohidratos</p>
+</li><li>
+<p>Valor de lipidos</p>
+</li><li>
+<p>Impacto de gas</p>
+</li><li>
+<p>Impacto de terreno</p>
+</li></ul>
+
   </section>
 
   
@@ -139,7 +167,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - cantidad de carbohidrato del alimento</p>
         
         </div>
       </div>
@@ -152,7 +180,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - impacto gas del alimento</p>
         
         </div>
       </div>
@@ -165,7 +193,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - cantidad de lipidos del alimento</p>
         
         </div>
       </div>
@@ -178,7 +206,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo nombre de la comida</p>
         
         </div>
       </div>
@@ -191,7 +219,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - cantidad de proteina de la comida</p>
         
         </div>
       </div>
@@ -204,7 +232,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - impacto de terreno del alimento</p>
         
         </div>
       </div>
@@ -238,7 +266,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 27</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 37</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">n</span>, <span class="ruby-identifier">p</span>, <span class="ruby-identifier">c</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">g</span>, <span class="ruby-identifier">t</span>)
   <span class="ruby-comment"># Nombre del alimento</span>
   <span class="ruby-ivar">@name</span> = <span class="ruby-identifier">n</span>
@@ -290,7 +318,7 @@
 
           
           <div class="method-source-code" id="3C-3D-3E-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 18</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 17</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">&lt;=&gt;</span> (<span class="ruby-identifier">other</span>)
 
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">valor_energetico</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">valor_energetico</span>
@@ -325,7 +353,7 @@
 
           
           <div class="method-source-code" id="formateo_nombre-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 97</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 107</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">formateo_nombre</span> (<span class="ruby-identifier">value</span>)
   <span class="ruby-string">&#39;%.2f&#39;</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">value</span>
 <span class="ruby-keyword">end</span></pre>
@@ -358,7 +386,7 @@
 
           
           <div class="method-source-code" id="get_valores-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 102</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 112</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_valores</span>
   <span class="ruby-ivar">@valor_</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
   <span class="ruby-ivar">@valor_</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">valor_energetico</span>, <span class="ruby-identifier">proteina</span>, <span class="ruby-identifier">gei</span>, <span class="ruby-identifier">terreno</span>)
@@ -392,7 +420,7 @@
 
           
           <div class="method-source-code" id="to_s-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 43</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 53</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">to_s</span>
   <span class="ruby-node">&quot;#{@name}, #{@proteina}, #{@carbohidrato}, #{@lipido}, #{@gei}, #{@terreno}&quot;</span>
 <span class="ruby-keyword">end</span></pre>
@@ -425,7 +453,7 @@
 
           
           <div class="method-source-code" id="valor_energetico-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 92</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 102</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">valor_energetico</span>
   (<span class="ruby-identifier">valor_proteina</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">valor_glucido</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">valor_lipido</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">3</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -458,7 +486,7 @@
 
           
           <div class="method-source-code" id="valor_glucido-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 83</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 93</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">valor_glucido</span>
   (<span class="ruby-ivar">@carbohidrato</span><span class="ruby-operator">*</span><span class="ruby-value">4</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">1</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -491,7 +519,7 @@
 
           
           <div class="method-source-code" id="valor_lipido-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 87</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 97</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">valor_lipido</span>
   (<span class="ruby-ivar">@lipido</span><span class="ruby-operator">*</span><span class="ruby-value">9</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">1</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -524,7 +552,7 @@
 
           
           <div class="method-source-code" id="valor_proteina-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 78</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/comida.rb, line 88</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">valor_proteina</span>
   (<span class="ruby-ivar">@proteina</span><span class="ruby-operator">*</span><span class="ruby-value">4</span>).<span class="ruby-identifier">round</span>(<span class="ruby-value">1</span>)
 <span class="ruby-keyword">end</span></pre>

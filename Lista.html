@@ -176,7 +176,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - cabeza de la lista, principio</p>
         
         </div>
       </div>
@@ -189,7 +189,7 @@
 
         <div class="method-description">
         
-        
+        <p>atributo - cola de la lista, final</p>
         
         </div>
       </div>
@@ -223,7 +223,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 23</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 28</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> ()
     <span class="ruby-ivar">@size</span> = <span class="ruby-value">0</span>
     <span class="ruby-ivar">@head</span> = <span class="ruby-keyword">nil</span>
@@ -273,7 +273,7 @@
 
           
           <div class="method-source-code" id="add-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 65</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 70</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add</span>(<span class="ruby-identifier">comida</span>, <span class="ruby-identifier">pos</span>)
     <span class="ruby-identifier">nodo</span> = <span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">comida</span>,<span class="ruby-keyword">nil</span>,<span class="ruby-keyword">nil</span>)
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">pos</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-ivar">@size</span> <span class="ruby-value">-1</span>
@@ -326,7 +326,7 @@
 
           
           <div class="method-source-code" id="add_to_head-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 110</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 115</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_to_head</span>(<span class="ruby-identifier">comida</span>)
     <span class="ruby-identifier">nodo</span> = <span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">comida</span>,<span class="ruby-keyword">nil</span>,<span class="ruby-keyword">nil</span>)
     <span class="ruby-identifier">ini</span> = <span class="ruby-ivar">@head</span>
@@ -374,7 +374,7 @@
 
           
           <div class="method-source-code" id="add_to_tail-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 90</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 95</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_to_tail</span>(<span class="ruby-identifier">comida</span>)
     <span class="ruby-identifier">nodo</span> = <span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">comida</span>,<span class="ruby-keyword">nil</span>,<span class="ruby-keyword">nil</span>)
     <span class="ruby-identifier">ini</span> = <span class="ruby-ivar">@head</span>
@@ -422,7 +422,7 @@
 
           
           <div class="method-source-code" id="addmore-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 131</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 136</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">addmore</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">comida</span>)
     <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
     <span class="ruby-identifier">tmp</span> = <span class="ruby-identifier">comida</span>.<span class="ruby-identifier">length</span>
@@ -477,7 +477,7 @@
 
           
           <div class="method-source-code" id="each-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 9</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 11</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">each</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -518,7 +518,7 @@
 
           
           <div class="method-source-code" id="extract_head-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 158</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 163</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">extract_head</span>
     <span class="ruby-ivar">@size</span> <span class="ruby-operator">-=</span><span class="ruby-value">1</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
@@ -555,7 +555,7 @@
 
           
           <div class="method-source-code" id="extract_tail-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 167</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 172</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">extract_tail</span>
     <span class="ruby-ivar">@size</span> <span class="ruby-operator">-=</span><span class="ruby-value">1</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@tail</span>
@@ -592,7 +592,7 @@
 
           
           <div class="method-source-code" id="get-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 45</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 50</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get</span>(<span class="ruby-identifier">val</span>)
     <span class="ruby-identifier">aux_</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
@@ -637,7 +637,7 @@
 
           
           <div class="method-source-code" id="get_carbohidrato-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 256</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 261</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_carbohidrato</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -682,7 +682,7 @@
 
           
           <div class="method-source-code" id="get_gei-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 193</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 198</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_gei</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -727,7 +727,7 @@
 
           
           <div class="method-source-code" id="get_gei_anual-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 210</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 215</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_gei_anual</span>
     <span class="ruby-identifier">res</span> = <span class="ruby-identifier">get_gei</span> <span class="ruby-operator">*</span> <span class="ruby-value">365</span>
     <span class="ruby-identifier">res</span>.<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
@@ -761,7 +761,7 @@
 
           
           <div class="method-source-code" id="get_head-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 40</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 45</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_head</span>
     <span class="ruby-ivar">@head</span>
 <span class="ruby-keyword">end</span></pre>
@@ -794,7 +794,7 @@
 
           
           <div class="method-source-code" id="get_lipido-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 273</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 278</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_lipido</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -839,7 +839,7 @@
 
           
           <div class="method-source-code" id="get_proteina-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 239</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 244</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_proteina</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -884,7 +884,7 @@
 
           
           <div class="method-source-code" id="get_tail-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 35</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 40</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_tail</span>
     <span class="ruby-ivar">@tail</span>
 <span class="ruby-keyword">end</span></pre>
@@ -917,7 +917,7 @@
 
           
           <div class="method-source-code" id="get_terreno-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 216</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 221</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_terreno</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
@@ -962,7 +962,7 @@
 
           
           <div class="method-source-code" id="get_terreno_anual-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 233</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 238</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_terreno_anual</span>
     <span class="ruby-identifier">res</span> = <span class="ruby-identifier">get_terreno</span> <span class="ruby-operator">*</span> <span class="ruby-value">365</span>
     <span class="ruby-identifier">res</span>.<span class="ruby-identifier">round</span>(<span class="ruby-value">2</span>)
@@ -996,7 +996,7 @@
 
           
           <div class="method-source-code" id="size-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 30</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">size</span>
     <span class="ruby-ivar">@size</span>
 <span class="ruby-keyword">end</span></pre>
@@ -1029,7 +1029,7 @@
 
           
           <div class="method-source-code" id="write-source">
-            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 176</span>
+            <pre><span class="ruby-comment"># File lib/alimentos/lista.rb, line 181</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">write</span>
     <span class="ruby-identifier">aux</span> = <span class="ruby-ivar">@head</span>
     <span class="ruby-keyword">if</span> <span class="ruby-identifier">aux</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
