@@ -1,9 +1,9 @@
-Wed, 18 Dec 2019 23:40:05 +0000
+Fri, 20 Dec 2019 10:29:09 +0000
 ../README.md	Tue, 17 Dec 2019 22:54:04 +0000
-lib/alimentos/alimento_diario.rb	Wed, 18 Dec 2019 23:36:32 +0000
-lib/alimentos/comida.rb	Wed, 18 Dec 2019 23:31:11 +0000
-lib/alimentos/lista.rb	Wed, 18 Dec 2019 23:38:17 +0000
-lib/alimentos/menu.rb	Tue, 17 Dec 2019 23:19:55 +0000
-lib/alimentos/plato.rb	Wed, 18 Dec 2019 23:37:47 +0000
-lib/alimentos/produccion.rb	Wed, 18 Dec 2019 23:37:08 +0000
-lib/alimentos/version.rb	Wed, 18 Dec 2019 23:39:58 +0000
+lib/alimentos/alimento_diario.rb	Wed, 18 Dec 2019 23:52:37 +0000
+lib/alimentos/comida.rb	Wed, 18 Dec 2019 23:52:37 +0000
+lib/alimentos/lista.rb	Wed, 18 Dec 2019 23:52:37 +0000
+lib/alimentos/menu.rb	Fri, 20 Dec 2019 10:03:25 +0000
+lib/alimentos/plato.rb	Fri, 20 Dec 2019 10:20:52 +0000
+lib/alimentos/produccion.rb	Wed, 18 Dec 2019 23:52:37 +0000
+lib/alimentos/version.rb	Wed, 18 Dec 2019 23:52:37 +0000
